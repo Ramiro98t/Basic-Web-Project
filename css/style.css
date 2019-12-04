@@ -1,0 +1,270 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.65);
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Imagen de fondo */
+    background: url(../img/wall.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: url(../img/header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.ventana {
+    margin: 15px;
+    padding: 1rem 1.3rem;
+    /* background: rgba(255, 255, 255, 0.09); */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    line-height: 2;
+    border-radius: 12px;
+}
+.celda-imagen {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    margin: 5px 0 0 0;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: auto;
+    max-height: 100%;
+}
+
+.icono:hover {
+    cursor: pointer;
+}
+h1, label, a{
+    color: rgba(117, 117, 117, 0.75);
+    text-decoration: none;
+}
+
+button,
+.abutton {
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.09);
+    border: none;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 5px;
+}
+
+button:hover,
+.abutton:hover {
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin-right: 10px;
+}
+
+.hor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.celda {
+    padding: 0 20px;
+}
+
+.celda:first-of-type,
+.celda:last-of-type {
+    padding: 0;
+}
+
+input,
+label[for="archivo"],
+select, option {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-style: none;
+    padding: 5px 10px;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+input[type="button"]:hover,
+label[for="archivo"] {
+    cursor: pointer;
+}
+
+input[type="file"]#archivo {
+    display: none;
+}
+
+
+.formulario {
+    line-height: 2;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.btn, .reg {
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.mensaje {
+    color: rgba(173, 55, 55, 0.58);
+}
+
+/** Ventala detalles/actualiza **/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: center;
+}
+
+/** HEADER BAR **/
+h2:hover {
+    cursor: pointer;
+}
+
+/** ADMINISTRADORES > BARRA LATERAL **/
+.barraLateral {
+    display: block;
+    align-items: baseline;
+}
+
+/** PRODUCTOS - USUARIO **/
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: auto;
+    /* justify-content:center; */
+}
+
+.item {
+    width: 128px;
+    height: 222px;
+    display: block;
+}
+
+.carrito {
+    position: relative;
+    text-align: center;
+}
+
+.carrito:hover {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    width: 25px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    font-size: 15px;
+    color: white;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.vista-carrito {
+    width: 190px;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+}
+
+.vista-carrito-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.vista-carrito input{
+    width: 30px;
+}
+
+.vista-carrito h2 {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.vista-carrito-header .icono {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.2;
+    border-radius: 22px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: 1px groove rgba(0, 0, 0, 0.2);
+}
+
+.icono:not(:first-child) {
+    width: 25px;
+    height: 25px;
+}
+
+.item .celda-imagen {
+    transition: transform .5s;
+}
+.item .celda-imagen:hover {
+    border-radius: 5px;
+    transform: scale(1.7);
+}
+
+header h2, label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.ventana {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.user {
+    display: grid;
+    justify-content: flex-end;
+}
