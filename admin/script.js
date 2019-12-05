@@ -84,7 +84,7 @@ $(document).ready(function(){
         var fila = $(this).parent().parent().parent().attr('id');   // Obtiene el id de la fila seleccionada
         if (confirm('Borrar registro '+fila+'?')) {                 // Si se confirma da paso al ajax para update SQL
             $.ajax({
-                url: 'elimina_cl.php',                            // Pagina a la que se accede de manera asincrona
+                url: 'elimina_cli.php',                            // Pagina a la que se accede de manera asincrona
                 type: 'post',                                       // Metodo de envio de datos
                 dataType: 'text',
                 data: 'id='+fila,                                   // Id de la fila seleccionada, a recibir en 'actualiza_administradores'
