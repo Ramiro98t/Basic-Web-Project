@@ -104,7 +104,8 @@
                         cache: false,
                         success: function(res){
                                 if(res == 1){
-                                    $(".mensaje").html('Bienvenido!'); // Modifica el contenedor, inserta al html.
+                                    $('.mensaje').html('Bienvenido!  <img src="./img/loading.gif" width="25px" height = "25px"/>'); // Modifica el contenedor 'id=mensaje', inserta al html la imagen
+                                    // $(".mensaje").html('Bienvenido!'); // Modifica el contenedor, inserta al html.
                                     setTimeout("$('.mensaje').html('')",1500);
                                     setTimeout(function(){window.location.href='tienda.php';},1500);
                                 }
