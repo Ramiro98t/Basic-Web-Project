@@ -44,7 +44,7 @@
                             '&producto='+producto),
                         success: function(res){                             // En caso de un redireccionamiento con exito
                             // $("#carrito").load(location.href + " #carrito>*", "");
-                            location.href="index.php";
+                            location.href="tienda.php";
                         },
                         error: function(){
                             alert('Error al conectar al servidor');         // Inconsistencia al redireccionar

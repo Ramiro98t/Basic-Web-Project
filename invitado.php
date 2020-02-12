@@ -13,5 +13,5 @@
     // Concatena la cadena de 5 caracteres del alfabeto de cad1 a la de 10 caracteres obtenidos en la encriptacion de microsegundos
     $user = $cad1.$cad2;
     $_SESSION['user'] = $user;    // Establece un nombre de usuario aleatorio obtenido de los metodos anteriores
-    header("Location: index.php");  // Redirecciona a pagina principal
+    header("Location: tienda.php");  // Redirecciona a pagina principal
 ?>
